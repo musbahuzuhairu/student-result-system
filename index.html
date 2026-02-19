@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Result System</h2>
+
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="number" id="score" placeholder="Score">
+    <input type="number" id="credit" placeholder="Credit Unit">
+
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="clearAll()">Clear All</button>
+
+    <h3>Student List</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Credit</th>
+                <th>Grade</th>
+                <th>Point</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <h3 id="gpa"></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
